@@ -57,7 +57,8 @@
   - 테이블을 분할하여 중복 데이터를 제거함으로써 데이터 무결성을 유지하는 행위
   
   - 1정규화(1NF) : 도메인이 원자값   
-  <img src="https://user-images.githubusercontent.com/101415950/195033077-8eaaa90a-ceaa-4f0f-a1ee-f1fa0fa1d39b.png" width="40%" height="40%">
+      
+  <img src="https://user-images.githubusercontent.com/101415950/195033077-8eaaa90a-ceaa-4f0f-a1ee-f1fa0fa1d39b.png" width="60%" height="60%">
 
   - 2정규화(2NF) : 부분적 함수 종속 제거
   
