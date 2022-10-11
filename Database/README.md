@@ -58,13 +58,17 @@
   
   - 1정규화(1NF) : 도메인이 원자값   
       
-  <img src="https://user-images.githubusercontent.com/101415950/195033077-8eaaa90a-ceaa-4f0f-a1ee-f1fa0fa1d39b.png" width="60%" height="60%">
+    <img src="https://user-images.githubusercontent.com/101415950/195033077-8eaaa90a-ceaa-4f0f-a1ee-f1fa0fa1d39b.png" width="60%" height="60%">
 
-  - 2정규화(2NF) : 부분적 함수 종속 제거
-  
-  - 3정규화(3NF) : 이행적 함수 종속 제거
-  
-  - BCNF(보이스코드 정규화) : 
+  - 2정규화(2NF) : 부분적 함수 종속 제거   
+      
+    <img src="https://user-images.githubusercontent.com/101415950/195034681-dda3722c-2923-47e0-8d04-7abdd2ce7c99.png" width="80%" height="80%">
+
+  - 3정규화(3NF) : 이행적 함수 종속 제거   
+      
+    <img src="https://user-images.githubusercontent.com/101415950/195034701-18d90abe-850f-46d4-b371-403ccf8dd04b.png" width="80%" height="80%">
+
+  - BCNF(보이스코드 정규화) : 결정자이면서 후보키가 아닌 것을 제거
   
   - 4정규화(4NF) : 다치(다중) 종속 제거
   
