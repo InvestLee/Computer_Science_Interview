@@ -58,6 +58,8 @@
 
 - 자원을 URI로 행위에 맞는 적절한 HTTP method를 사용한 것이 RESTful한 메소드
 
+- 즉 RESTful한 메소드는 누구든 각 요청의 의도를 쉽게 파악할 수 있어야 함
+
 - RESTful하지 않은 메소드를 예로 들면 CRUD기능을 모두 POST만으로 처리한 것
 
 ---
