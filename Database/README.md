@@ -68,8 +68,10 @@
       
     <img src="https://user-images.githubusercontent.com/101415950/195034701-18d90abe-850f-46d4-b371-403ccf8dd04b.png" width="80%" height="80%">
 
-  - BCNF(보이스코드 정규화) : 결정자이면서 후보키가 아닌 것을 제거
+  - BCNF(보이스코드 정규화) : 결정자이면서 후보키가 아닌 것을 제거   
   
+    <img src="https://user-images.githubusercontent.com/101415950/195036347-bf205642-ec79-4cd4-af2c-8971f863b81d.png" width="80%" height="80%">
+
   - 4정규화(4NF) : 다치(다중) 종속 제거
   
   - 5정규화(5NF) : 조인 종속 제거
