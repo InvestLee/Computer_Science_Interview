@@ -5,11 +5,11 @@
 ---
 ## 깊이 우선 탐색(DFS, Depth-First Search)
 
-<img src="https://user-images.githubusercontent.com/101415950/194974462-2c650675-1607-4f56-bdb4-9bc5c61b5d45.gif" width="40%" height="40%">   
+<img src="https://user-images.githubusercontent.com/101415950/194974462-2c650675-1607-4f56-bdb4-9bc5c61b5d45.gif" width="40%" height="40%">
 (출처 https://developer-mac.tistory.com/64)
 
 ---
 ## 너비 우선 탐색(BFS, Breadth-First Search)
 
-<img src="https://user-images.githubusercontent.com/101415950/194974879-88205f00-14a0-41f0-9219-3f7fad0a6358.gif" width="40%" height="40%">   
+<img src="https://user-images.githubusercontent.com/101415950/194974879-88205f00-14a0-41f0-9219-3f7fad0a6358.gif" width="40%" height="40%">
 (출처 https://developer-mac.tistory.com/64)
