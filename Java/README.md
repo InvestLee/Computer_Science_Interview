@@ -60,4 +60,18 @@
   - interface 지시자로 정의되어서 모든 메소드가 추상메소드로 정의
 
   - 함수의 구현을 강제해서 구현한 객체들이 같은 동작을 하는 것을 보장하는 것에 목적
+  
+  ---
+## 깊은 복사(Deep Copy, Call by value), 얉은 복사(Shallow Copy, Call by reference)
 
+- 깊은 복사(Deep Copy, Call by value)
+  
+  - 새로운 메모리 공간을 만들어서 실제 값을 복사
+
+  - 실제 값과 복사 값이 서로 다른 메모리에 저장
+
+- 얉은 복사(Shallow Copy, Call by reference)
+
+  - 객체의 주소값을 복사하는 방식으로 원본에 영향을 줄 수 있음
+
+  - 실제값과 복사 값이 동일한 메모리 참조
