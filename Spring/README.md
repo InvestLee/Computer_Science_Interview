@@ -17,6 +17,11 @@
 - 직접 의존하는 객체를 생성하거나 검색해서 가져올 필요가 없어서 결합도가 낮아지는 장점이 있음
 
 - Field Injection(필드 주입)
+
+  - 생성자 or Setter가 없으므로 수동 의존성 주입이 필요한 테스트 불가능
+  
+  - 의존성이 프레임워크에 강하게 종속되는 문제점 발생
+
 ```
 @Controller
 public class MemberController {
@@ -26,13 +31,13 @@ public class MemberController {
 }
 ```
    
-  1. 생성자 or Setter가 없으므로 수동 의존성 주입이 필요한 테스트 불가능
-	
-  2. 의존성이 프레임워크에 강하게 종속되는 문제점 발생
-   
- <br/><br/>
-   
 - Setter Injection(수정자 주입)
+ 
+  - 속성에 final를 작성할 수 없으므로 의존성 불변을 보장할 수 없음 
+
+  - 런타임 중 setter를 다시 호출하여 이미 주입된 의존성 변경이 가능
+
+  - 주로 런타임 중 의존성 수정하거나 선택적 의존성(의존성 주입이 반드시 필수가 아닌 것을 의미)에 사용   
 ```
 @Controller
 public class MemberController {
@@ -45,15 +50,13 @@ public class MemberController {
 }
 ```
   
-  1. 속성에 final를 작성할 수 없으므로 의존성 불변을 보장할 수 없음 
-
-  2. 런타임 중 setter를 다시 호출하여 이미 주입된 의존성 변경이 가능
-
-  3. 주로 런타임 중 의존성 수정하거나 선택적 의존성(의존성 주입이 반드시 필수가 아닌 것을 의미)에 사용   
-  
-<br/><br/> 
-  
 - Construction Injection(생성자 주입)
+
+  - 객체의 최초 생성 시점에 스프링이 모든 의존성을 주입
+
+  - 생성자 호출 시 final에 의해서 의존성 주입이 최초 1회만 이루어짐
+
+  - 생성자 주입은 의존관계 불변이므로 NullPointerException 방지(다른 방식은 직접 객체를 생성하여 방지)
 ```
 @Controller
 public class MemberController {
@@ -66,11 +69,7 @@ public class MemberController {
 }
 ```
 
-  1. 객체의 최초 생성 시점에 스프링이 모든 의존성을 주입
 
-  2. 생성자 호출 시 final에 의해서 의존성 주입이 최초 1회만 이루어짐
-
-  3. 생성자 주입은 의존관계 불변이므로 NullPointerException 방지(다른 방식은 직접 객체를 생성하여 방지)
 
 ---
 ## 제어의 역전(IoC, Inversion of Control)
