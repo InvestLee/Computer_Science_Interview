@@ -92,3 +92,31 @@
 
   - 데이터베이스 성능 향상 등을 위해 중복, 통합, 분리 등을 수행하여
     의도적으로 정규형을 위배한 데이터 구조로 만드는 행위
+    
+
+---
+## DBMS 기능
+
+- 데이터 정의어(DDL, Data Definition Language)
+
+  - 테이블과 컬럼을 정의하는 명령어로 생성, 수정, 삭제 등의 데이터 전체 골격을 결정하는 언어
+
+  - ex. CREATE, ALTER, DROP, RENAME, TRUNCATE
+
+- 데이터 조작어(DML, Data Manipulation Language)
+
+  - 데이터베이스의 내부 데이터를 관리하기 위한 언어로 데이터를 조회, 추가, 변경, 삭제 등의 작업을 수행
+
+  - SELECT, INSERT, UPDATE, DELETE
+
+- 데이터 제어어(DCL, Data Control Language)
+
+  - 데이터베이스에 접근하고 객체들을 사용하도록 권한을 주고 회수하는 명령
+
+  - GRANT, REVOKE
+
+- 트랜잭션 제어어(DDL, Transaction Control Language)
+
+  - 데이터를 제어하는 언어가 아닌 DML에 의해 조작된 결과를 논리적인 작업 단위로 묶어 트랜잭션 별로 제어
+  
+  - COMMIT, ROLLBACK, SAVEPOINT
