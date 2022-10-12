@@ -18,6 +18,8 @@
 
 - Field Injection(필드 주입)
 
+  - @Autowired 애너테이션을 속성에 바로 주입
+
   - 생성자 or Setter가 없으므로 수동 의존성 주입이 필요한 테스트 불가능
   
   - 의존성이 프레임워크에 강하게 종속되는 문제점 발생
@@ -32,6 +34,8 @@ public class MemberController {
 ```
    
 - Setter Injection(수정자 주입)
+ 
+  - setter 메소드를 통해 의존성 주입
  
   - 속성에 final를 작성할 수 없으므로 의존성 불변을 보장할 수 없음 
 
@@ -51,6 +55,8 @@ public class MemberController {
 ```
   
 - Construction Injection(생성자 주입)
+
+  - 생성자를 통해 의존성 주입
 
   - 객체의 최초 생성 시점에 스프링이 모든 의존성을 주입
 
