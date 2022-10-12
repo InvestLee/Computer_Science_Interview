@@ -77,6 +77,10 @@
     <img src="https://user-images.githubusercontent.com/101415950/195036347-bf205642-ec79-4cd4-af2c-8971f863b81d.png" width="80%" height="80%">
 
   - 4정규화(4NF) : 다치(다중) 종속 제거
+    
+    - 다치종속 : 두개의 독립된 애트리뷰트가 1:N 관계로 대응하는 관계
+  
+    ![image](https://user-images.githubusercontent.com/101415950/195234161-eab7d116-a95f-4bce-9e65-a921affdb232.png)
   
   - 5정규화(5NF) : 조인 종속 제거
 
