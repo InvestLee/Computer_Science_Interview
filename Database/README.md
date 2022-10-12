@@ -83,6 +83,10 @@
     ![image](https://user-images.githubusercontent.com/101415950/195234161-eab7d116-a95f-4bce-9e65-a921affdb232.png)
   
   - 5정규화(5NF) : 조인 종속 제거
+    
+    - Join 종속 : 하나의 릴레이션을 무손실, 비부가적 분해하고 나서 다시 합쳤을 때 원래의 릴레이션으로 복원 가능한 관계
+
+    ![image](https://user-images.githubusercontent.com/101415950/195247702-96354a74-6d70-4ec9-87c9-6f61759f6780.png)
 
 - 비정규화
 
