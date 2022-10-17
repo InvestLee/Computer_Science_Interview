@@ -52,7 +52,6 @@
 - 루트 노드를 찾는 Find 연산과 노드를 합치는 Union 연산으로 구성
 
 [Example]
-![image](https://user-images.githubusercontent.com/101415950/196175786-def50ef9-1305-4077-b8ec-773fffefb99e.png)
-
-![image](https://user-images.githubusercontent.com/101415950/196175860-e682fef2-915e-4aea-b307-c1d56de620ed.png)
+<img src="https://user-images.githubusercontent.com/101415950/196175786-def50ef9-1305-4077-b8ec-773fffefb99e.png" width="80%" height="80%">
+<img src="https://user-images.githubusercontent.com/101415950/196175860-e682fef2-915e-4aea-b307-c1d56de620ed.png" width="80%" height="80%">
 
