@@ -25,7 +25,6 @@
 ---
 ## 너비 우선 탐색(BFS, Breadth-First Search)
 
-
 - 그래프에서 가까운 노드부터 우선적으로 탐색하는 알고리즘
 
 - 탐색 시작 노드에서 시작해서 인접한 노드를 먼저 탐색하는 방식
@@ -42,6 +41,25 @@
 (출처 https://developer-mac.tistory.com/64)
 
 ---
+## 다익스트라 알고리즘(BFS, Breadth-First Search)
+
+- 최단 경로를 찾는 알고리즘
+
+- 탐색 시작 노드에서 시작해서 인접한 노드를 먼저 탐색하는 방식
+
+- Queue 자료구조를 사용하며 구체적인 동작은 아래와 같음
+  
+  1. 탐색 시작 노드를 큐에 삽입하고 방문 처리
+  
+  2. 큐에서 노드를 꺼낸 후 해당 노드의 인접 노드 중 방문하지 않은 노드를 모두 큐에 삽입 및 방문처리
+  
+  3. 더 이상 2번 과정을 수행할 수 없을 때까지 반복
+
+<img src="https://user-images.githubusercontent.com/101415950/196177010-28225a74-b08d-42e3-8d05-9e8581d9163e.png" width="80%" height="80%">
+
+(출처 https://www.youtube.com/watch?v=F-tkqjUiik0&list=PLVsNizTWUw7H9_of5YCB0FmsSc-K44y81&index=30)
+
+---
 ## 유니온 파인드(Union-Find)
 
 
@@ -54,4 +72,4 @@
 [Example]   
 <img src="https://user-images.githubusercontent.com/101415950/196175786-def50ef9-1305-4077-b8ec-773fffefb99e.png" width="80%" height="80%">
 <img src="https://user-images.githubusercontent.com/101415950/196175860-e682fef2-915e-4aea-b307-c1d56de620ed.png" width="80%" height="80%">
-
+(출처 https://ip99202.github.io/posts/%EC%9C%A0%EB%8B%88%EC%98%A8-%ED%8C%8C%EC%9D%B8%EB%93%9C(Union-Find)/)
