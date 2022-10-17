@@ -41,11 +41,13 @@
 (출처 https://developer-mac.tistory.com/64)
 
 ---
-## 다익스트라 알고리즘(BFS, Breadth-First Search)
+## 다익스트라 알고리즘(Dijkstra)
 
 - 특정한 노드에서 출발하여 모든 노드로 가는 최단 경로를 계산하는 알고리즘
 
 - 음의 간선이 없을 때 동작
+
+- 그리디 알고리즘에 속함
 
 - 최단경로 계산 시 현재 노드에서부터 다른 노드 각각에 대한 최단 거리를 1차원 리스트에 저장하여 갱신
 
@@ -66,6 +68,27 @@
 <img src="https://user-images.githubusercontent.com/101415950/196177010-28225a74-b08d-42e3-8d05-9e8581d9163e.png" width="80%" height="80%">
 
 (출처 https://www.youtube.com/watch?v=F-tkqjUiik0&list=PLVsNizTWUw7H9_of5YCB0FmsSc-K44y81&index=30)
+
+---
+## 플로이드 워셜 알고리즘(Floyd-Warshall)
+
+- 모든 노드에서 다른 모든 노드로 가는 최단 경로를 계산하는 알고리즘
+
+- 다이나믹 프로그래밍 유형에 속함
+
+- 최단경로 계산 시 최단 거리를 2차원 리스트에 저장하여 갱신
+
+- 노드와 간선 수가 많을 때 다익스트라, 노드의 개수가 적을 때는 플로이드 워셜 알고리즘이 효과적
+
+- 각 단계마다 특정한 노드 k를 거쳐 가는 경우 확인
+  
+  1. 최단 거리 2차원 테이블 초기화
+  
+  2. 1번 노드를 거쳐가는 경우를 고려하여 테이블 갱신 ~ n번 노드를 거쳐가는 경우를 고려한 테이블 갱신
+
+<img src="https://user-images.githubusercontent.com/101415950/196182624-c03cc0c8-cb02-45ca-8bd3-56bfad61abaf.png" width="80%" height="80%">
+
+(출처 https://www.youtube.com/watch?v=hw-SvAR3Zqg&list=PLVsNizTWUw7H9_of5YCB0FmsSc-K44y81&index=31)
 
 ---
 ## 유니온 파인드(Union-Find)
