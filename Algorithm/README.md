@@ -40,3 +40,19 @@
 
 <img src="https://user-images.githubusercontent.com/101415950/194974879-88205f00-14a0-41f0-9219-3f7fad0a6358.gif" width="40%" height="40%">
 (출처 https://developer-mac.tistory.com/64)
+
+---
+## 유니온 파인드(Union-Find)
+
+
+- 두 노드가 같은 그래프에 속하는지 판별하는 알고리즘
+
+- 서로소 집합, 상호 베타적 집합(Disjoint_Set)으로도 불림
+
+- 루트 노드를 찾는 Find 연산과 노드를 합치는 Union 연산으로 구성
+
+[Example]
+![image](https://user-images.githubusercontent.com/101415950/196175786-def50ef9-1305-4077-b8ec-773fffefb99e.png)
+
+![image](https://user-images.githubusercontent.com/101415950/196175860-e682fef2-915e-4aea-b307-c1d56de620ed.png)
+
