@@ -59,4 +59,4 @@
 
 - 프레젠테이션 계층 (Presentation Tier), 어플리케이션 계층 (Application Tier), 데이터 계층 (Data Tier)으로 구분되어 있음
 
-<img src="https://user-images.githubusercontent.com/101415950/196428721-5f70981d-55ab-4bae-aaeb-896240b19fb7.png" width="40%" height="40%">
+<img src="https://user-images.githubusercontent.com/101415950/196428721-5f70981d-55ab-4bae-aaeb-896240b19fb7.png" width="60%" height="60%">
