@@ -49,3 +49,16 @@
 
 - 웹페이지 전환없이 부드럽게 전개
 
+
+---
+## 3계층구조(3 Tier)
+
+- 특정 플랫폼을 역할을 구분하여 3계층으로 나눈 구조
+
+- 각 계층의 변경이 다른 계층이 의존하지 않음(독립적)
+
+- 프레젠테이션 계층 (Presentation Tier), 어플리케이션 계층 (Application Tier), 데이터 계층 (Data Tier)으로 구분되어 있음
+
+
+![image](https://user-images.githubusercontent.com/101415950/196428721-5f70981d-55ab-4bae-aaeb-896240b19fb7.png)
+
