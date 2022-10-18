@@ -59,4 +59,26 @@
 
 - 프레젠테이션 계층 (Presentation Tier), 어플리케이션 계층 (Application Tier), 데이터 계층 (Data Tier)으로 구분되어 있음
 
+- 프레젠테이션 계층 (Presentation Tier)
+
+  - UI를 지원하며 프론트엔드라고도 부름
+  
+  - 주로 정적인 데이터를 다루는 웹서버가 해당되며 HTML, Javascript, CSS 등이 이 계층에 해당
+
+- 어플리케이션 계층 (Application Tier)
+
+  - 사용자가 요청하는 정보를 연산 등을 통해 가공하는 역할
+
+  - 비즈니스 로직 계층, 트랜잭션 계층, 미들웨어 또는 백엔드이라고도 부름
+  
+  - 주로 동적인 데이터를 다루는 WAS가 해당되며 Java, Python 등이 이 계층에 해당
+
+- 데이터 계층 (Data Tier)
+
+  - 데이터베이스에 접근하여 데이터를 읽거나 쓰는 것을 관리하는 역할
+  
+  - 주로 DBMS가 이 계층에 해당되며 백엔드라고도 부름
+
+  - MySQL, MongoDB, MariaDB, Oracle 등이 이 계층에 해당
+
 <img src="https://user-images.githubusercontent.com/101415950/196428721-5f70981d-55ab-4bae-aaeb-896240b19fb7.png" width="60%" height="60%">
