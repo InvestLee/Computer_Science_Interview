@@ -29,3 +29,27 @@ model이 요청에 따른 값이나 처리된 값을 받아 vo클래스로 정�
 
 3. DB
 처리된 데이터가 저장되고 관리되는 장소
+
+
+sueupdaum profile image	
+강사 하승현
+오전 10:44
+ALTER SESSION SET “_ORACLE_SCRIPT”=true;
+
+sueupdaum profile image	
+강사 하승현
+오전 10:49
+alter user lotteuser default tablespace users quota unlimited on users;
+
+sueupdaum profile image	
+강사 하승현
+오전 10:57
+#######
+
+SQLPLUS system/system;
+ALTER SESSION SET “_ORACLE_SCRIPT”=true;
+CREATE USER lotteuser IDENTIFIED BY 1234;
+GRANT CONNECT, RESOURCE TO lotteuser; 
+alter user lotteuser default tablespace users quota unlimited on users;
+CONN lotteuser /1234;
+@ C:\경로\emp.sql (바로 엔터)
