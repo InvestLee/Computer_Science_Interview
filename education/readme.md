@@ -75,3 +75,11 @@ https://db-engines.com/en/ranking
 추세가 관계형DB에서 비정형DB(DOCUMENT)로 변경되는 추세
 
 파이썬의 장고 프레임워크에 내장된 DB : SQLite
+
+[오라클 실행 순서]
+
+FROM(테이블) ---> WHERE(행 제한) --> SELECT(컬럼 추출) --> ROWNUM --> ORDER BY
+
+[MYSQL]
+
+FROM(테이블) ---> WHERE(행 제한) --> SELECT(컬럼 추출) ---> ORDER BY ---> LIMIT 
