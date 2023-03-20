@@ -67,3 +67,7 @@ CONN lotteuser /1234;
 SERVER <---------(SELECT)----------- DB
 
 SERVER --(INSERT, UPDATE, DELETE)--> DB
+
+[DB엔진랭킹]
+
+https://db-engines.com/en/ranking 
