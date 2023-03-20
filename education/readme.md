@@ -116,4 +116,10 @@ WHERE EXISTS
  FROM EMP E
  WHERE D.DEPTNO = E.DEPTNO
 );
+
+-- 연결 연산자 ||
+-- 컬럼과 컬럼을 연결 / 컬럼과 문자열 / 문자열과 문자열
+-- MySQL 제공 안된...CONCAT()
+-- SMITH씨의 월급은 1100달러 입니다.
+SELECT ENAME || '씨의 월급은 ' || SAL || '달러 입니다.' 문장 FROM EMP;
 ```
