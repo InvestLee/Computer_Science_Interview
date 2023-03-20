@@ -123,3 +123,5 @@ WHERE EXISTS
 -- SMITH씨의 월급은 1100달러 입니다.
 SELECT ENAME || '씨의 월급은 ' || SAL || '달러 입니다.' 문장 FROM EMP;
 ```
+
+BETWEEN 200 AND 100 = 200이상 100이하인 수가 없어서 아무것도 
