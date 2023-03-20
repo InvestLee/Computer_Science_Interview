@@ -53,3 +53,7 @@ GRANT CONNECT, RESOURCE TO lotteuser;
 alter user lotteuser default tablespace users quota unlimited on users;
 CONN lotteuser /1234;
 @ C:\경로\emp.sql (바로 엔터)
+
+
+SERVER <---------(SELECT)----------- DB
+SERVER --(INSERT, UPDATE, DELETE)--> DB
