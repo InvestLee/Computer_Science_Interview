@@ -100,4 +100,20 @@ FROM
 )
 WHERE ROWNUM <= 3;
 
+-- EMP 테이블에서 어떤 부서번호가 있는지를 검색....
+-- 중복을 없애고 정렬된 값으로
+-- DISTINCT는 10g 버전부터 정렬이 기본으로 안들어가 있음
+SELECT DISTINCT DEPTNO 
+FROM EMP
+ORDER BY DEPTNO;
+
+-- DISTINCT는 성능을 많이 잡아먹어서 EXISTS로 대체하거나 테이블 최소화 후 수행 권장
+SELECT DEPTNO 
+FROM DEPT D
+WHERE EXISTS
+(
+ SELECT * 
+ FROM EMP E
+ WHERE D.DEPTNO = E.DEPTNO
+);
 ```
