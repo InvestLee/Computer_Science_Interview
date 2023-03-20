@@ -11,13 +11,20 @@ VO 클래스 : DB테이블의 record를 인스턴스화시킨 클래스
 요청을 보내는 side
 웹 브라우저의 화면이 3티어 구조가 동작하는 시발점
 
+보통 브라우저 화면에서 HTTP를 통해 통신하지만
+홈쇼핑일 경우 고객이 휴대폰으로 전화 걸어 회사 내 통신할 경우에도
+데이터는 서버 한 곳에 합쳐져야 됨
+
 2. middle server
 client가 보낸 요청을 처리하는 side 즉 프로그램
 
-client ---(request(HTTP))----> server ----(JDBC)-----> DB
+client(인터넷 브라우저) ---(request(HTTP))----> server ----(JDBC)-----> DB
+핸드폰 ---(request(rmi))----> server ----(JDBC)-----> DB ==> DAO가 다른 디바이스 요청에도 모델링함
 
 controller가 처리
+
 model이 요청에 따른 값이나 처리된 값을 받아 vo클래스로 정리
+즉 고객 정보에 모델에 저장되어 DAO 프로그램 함수에 의해 DB에 전송됨 
 
 3. DB
 처리된 데이터가 저장되고 관리되는 장소
