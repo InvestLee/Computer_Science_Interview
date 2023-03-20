@@ -19,6 +19,7 @@ VO 클래스 : DB테이블의 record를 인스턴스화시킨 클래스
 client가 보낸 요청을 처리하는 side 즉 프로그램
 
 client(인터넷 브라우저) ---(request(HTTP))----> server ----(JDBC)-----> DB
+   
 핸드폰 ---(request(rmi))----> server ----(JDBC)-----> DB ==> DAO가 다른 디바이스 요청에도 모델링함
 
 controller가 처리
