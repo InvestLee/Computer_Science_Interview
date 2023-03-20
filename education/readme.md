@@ -83,3 +83,21 @@ FROM(테이블) ---> WHERE(행 제한) --> SELECT(컬럼 추출) --> ROWNUM --> 
 [MYSQL]
 
 FROM(테이블) ---> WHERE(행 제한) --> SELECT(컬럼 추출) ---> ORDER BY ---> LIMIT 
+
+```
+-- 별칭에 공백, 특수문자, 대소문자 구분시 " "로 쌓여야 한다.
+SELECT ENAME, JOB, SAL, SAL*2+100 "인상된 급여"
+FROM EMP
+ORDER BY "인상된 급여" DESC;
+
+-- EMP 테이블에서 급여를 가장 많이 받는 직원 상위 3명을 검색
+SELECT ENAME, JOB, SAL, ROWNUM RANKING, DENSE_RANK() OVER(ORDER BY SAL DESC)
+FROM
+(
+ SELECT ENAME, JOB, SAL
+ FROM EMP
+ ORDER BY SAL DESC
+)
+WHERE ROWNUM <= 3;
+
+```
