@@ -71,3 +71,5 @@ SERVER --(INSERT, UPDATE, DELETE)--> DB
 [DB엔진랭킹]
 
 https://db-engines.com/en/ranking 
+
+추세가 관계형DB에서 비정형DB(DOCUMENT)로 변경되는 추세
