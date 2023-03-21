@@ -217,3 +217,18 @@ SELECT EXTRACT(YEAR FROM HIREDATE) "Year",
        EXTRACT(DAY FROM HIREDATE) "DAY" 
 FROM EMP;
 ```
+
+```
+-- emp 테이블에서 사원들의 입사일을 기준으로 일년중 어느 분기에 입사했는지 여부를 검색(case문 사용)
+-- 이때 MANAGER  업무 부서 혹은 10번 부서에 한해서 검색하며 
+-- 정렬은 분기별로 한다.
+SELECT ENAME, JOB, DEPTNO, HIREDATE,
+       CASE WHEN TO_CHAR(HIREDATE,'q') = '1' THEN '1분기'
+            WHEN TO_CHAR(HIREDATE,'q') = '2' THEN '2분기'
+            WHEN TO_CHAR(HIREDATE,'q') = '3' THEN '3분기'
+            ELSE '4분기'
+            END 입사분기
+FROM EMP
+WHERE JOB = 'MANAGER' OR DEPTNO = 10
+ORDER BY 5;
+```
