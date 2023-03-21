@@ -158,3 +158,44 @@ WHERE EMPNO IN
 ```
 
 오라클 테이블은 2차원 구조 = 엑셀 파일의 2차원 구조 => csv파일로 변환한 후 적재하면 처리가 빠름 
+
+```
+-- 문자함수
+-- CONCAT() :: 문자열 혹은 컬럼 연결, 붙일때 사용
+SELECT CONCAT('Good',' Morning') FROM dual;
+SELECT CONCAT(ename,JOB) FROM emp;
+SELECT ename, JOB, CONCAT(CONCAT(ename, ' is a '), JOB) INFO FROM emp;
+
+-- INITCAP(CHAR)
+SELECT INITCAP(ENAME), ENAME, DEPTNO 
+FROM EMP
+WHERE LOWER(ENAME) = 'scott';
+
+-- SUBSTR('문자열',시작위치,글자수)
+-- 음수는 뒤에서 찾음
+SELECT SUBSTR('HelloWorld',6) from dual;
+SELECT SUBSTR('HelloWorld',6,4) from dual;
+SELECT SUBSTR('HelloWorld',-4,2) from dual;
+
+-- emp 테이블에서 사원의 이름이 N으로 끝나는 사원들을 검색
+SELECT ENAME, DEPTNO
+FROM EMP
+WHERE SUBSTR(ENAME,-1) = 'N';
+
+-- 날짜 추출 YEAR(), MONTH(), DAY() X
+-- 오라클은 날짜...년,월,일 같은 것들을 "추출"기법으로 리턴
+-- EMP테이블에서 년도 2자리만 추출되도록
+SELECT ENAME, DEPTNO, CONCAT(SUBSTR(HIREDATE,1,2), '년') 입사년도
+FROM EMP;
+
+-- 암시적 형변환 : 날짜와 문자는 상호 호환이 될 때
+-- 명시적 형변환 : 날짜와 문자는 상호 호환이 안될 때 직접 변환해줘야 됨
+SELECT SYSDATE FROM DUAL;
+
+-- EMP테이블에서 사원의 이름 중에 LL가 포함된 사원을 검색..
+-- LIKE, INSTR(특정한 문자열을 못찾으면 0, 찾으면 위치 반환)
+SELECT ENAME, DEPTNO, INSTR(ENAME, 'LL')
+FROM EMP
+--WHERE ENAME LIKE '%LL%'
+WHERE INSTR(ENAME, 'LL') > 0;
+```
